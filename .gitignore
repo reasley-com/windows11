@@ -21,6 +21,7 @@ package-lock.json
 *.suo
 *.ntvs*
 *.njsproj
+.next
 *.sln
 *.sw?
 *.env
