@@ -1,0 +1,25 @@
+.notification_context_cover {
+	position: relative;
+	overflow: hidden;
+	box-sizing: border-box;
+	-webkit-user-drag: element;
+	transition-timing-function: cubic-bezier(0,0,1,1);
+}
+
+.notification_context > .notification_context_cover:first-child > .notification_context_md { margin: 0px 14px 6px 14px; } 
+.notification_context > .notification_context_cover:last-child > .notification_context_md  { margin: 6px 14px 0px 14px; }
+.notification_context > .notification_context_cover:not(:first-child):not(:last-child) > .notification_context_md { margin: 6px 14px; }
+
+.notification_context_md {
+	padding: 8px;
+
+	background-color: rgba(255, 255, 255, 0.7);
+}
+	
+.notification_context_item { justify-content: center; width: 100%; }
+
+.notification_context__top,
+.notification_context__btm { display: flex; align-items: center; }
+.notification_context__top { margin-bottom: 8px; }
+
+.notification_context_md .icon_sm { margin-right: 8px; }

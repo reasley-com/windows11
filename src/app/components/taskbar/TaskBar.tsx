@@ -5,6 +5,7 @@ import { useState } from 'react'
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
 
+import AlertWindow from '@components/windows/AlertWindow'
 import '@components/taskbar/TaskBar.css'
 
 interface ShowWindow {
@@ -67,6 +68,8 @@ export default function TaskBar() {
 					</div>
 				</div>
 			</div>
+		
+			<AlertWindow props={{ showWindow: showWindow.alert }}></AlertWindow>
 		</>
 	)
 }

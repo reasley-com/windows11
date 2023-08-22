@@ -1,0 +1,38 @@
+.controller_reduction_cover input[type='checkbox'] {
+	display: none;
+}
+
+.notification_controller_cover input[type='checkbox'] {
+	display: none;
+}
+
+.notification_controller_cover input[type='checkbox']:checked + .notification_controller_md {
+	background: #0075D6;
+}
+
+.notification_controller_md {
+	height: 100%;
+
+	border-radius: 2px;
+	backdrop-filter: blur(8px);
+	background-color: rgba(255, 255, 255, .8);
+}
+
+.notification_controller_md label {
+	height: 100%;
+	width: 100%;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	padding: 6px;
+}
+
+.notification_controller_md img {
+	width: 16px;
+	height: 16px;
+}
+
+
+
